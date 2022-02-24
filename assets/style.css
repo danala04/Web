@@ -1,0 +1,304 @@
+a
+{
+   text-decoration: none;
+   color: white;
+}
+
+body
+{
+   background-color: gray;
+   margin: 0;
+   font-family: 'Marcellus', serif;
+}
+
+.container
+{
+   display: flex;
+}
+
+header
+{
+   width: 100%;
+   background-image: url("/img/jumbo.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   transition:all 2s;
+}
+
+header h1
+{
+   color: white;
+   text-align: left;
+   margin-top: 0;
+   margin-left: 40px;
+   margin-bottom: 0;
+   padding-top: 400px;
+   padding-bottom: 30px;
+   text-shadow:   0px 4px 3px rgba(0,0,0,0.4),
+                  0px 9px 12px rgba(0,0,0,0.1),
+                  0px 19px 21px rgba(0,0,0,0.1);
+   font-size: 7vw;
+}
+
+header .imgjumbo
+{
+   width: 100%;
+   margin-top: -100px;
+}
+
+header .container
+{
+   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.box
+{
+   outline: 2px solid red;
+}
+
+.logo
+{
+   flex-grow: 1;
+   padding-top: 20px;
+   padding-left: 50px;
+   padding-bottom: 20px;
+}
+
+.logo img
+{
+   height: 60px;;
+   object-fit: cover;
+   object-position: center;
+}
+
+nav
+{
+   flex-grow: 1;
+   color: white;
+   text-align: right;
+   margin: auto;
+   padding-right: 50px;
+}
+
+nav li
+{
+   margin-left: 20px;;
+   display: inline;
+   list-style-type: none;
+}
+
+main
+{
+   position:relative;
+   width: 100%;
+   top: 0;
+}
+
+.preset
+{
+   width: 100%;
+   background-image: url("/img/preset.jpg");
+   background-attachment: fixed;
+   background-position:center;
+   background-repeat: no-repeat;
+   background-size: cover;  
+   color: white; 
+}
+
+.preset h1
+{
+   margin: 0;
+   padding-top: 100px;
+   padding-right: 30px;
+   text-align: right;
+   font-weight: bold;
+   font-size: 5vw;
+}
+
+.preset h2
+{
+   margin: 0;
+   font-weight: lighter;
+   padding-right: 30px;
+   text-align: right;
+   margin-bottom: 100px;
+   font-size: 5vw;
+}
+
+.preset h3
+{
+   font-size: 30px;
+}
+
+.preset .container
+{
+   padding-left: 30px;
+   padding-right: 30px;
+}
+
+.project
+{
+   background-color: white;
+}
+
+.project h1
+{
+   margin: 0;
+   padding-top: 30px;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+.project .container
+{
+   width: 100%;
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.flex-grow-1
+{
+   flex-grow: 1;
+}
+
+.project .flex-grow-1
+{
+   width: 100%;
+   padding: 20px;
+   text-align: center;
+}
+
+.project .images
+{
+   background-position: center;
+   background-size: cover;
+   padding: 100px;
+   max-width: 100px;
+   transition: 0.6s;
+   margin: 0 auto;
+   filter:grayscale(100%);
+   margin-bottom: 20px;;
+}
+
+.project .images:hover
+{
+   filter: none !important;
+   transform: scale(0.9);
+}
+
+aside
+{
+   padding: 30px;;
+   text-align: center;
+   background-color: white
+}
+
+aside h1
+{
+   margin: 0;
+   margin-bottom: 20px;
+}
+
+aside img
+{
+   max-width: 200px;
+   border-radius: 100px;
+   margin-bottom: 20px;
+}
+
+aside h2
+{
+   font-size: 15px;
+}
+
+footer
+{
+   background-color: black;
+   color: white;
+   padding: 30px;
+   text-align: center;
+}
+
+footer h1
+{
+   margin: 0;
+   font-weight: lighter;
+   text-align: center;
+}
+
+footer li
+{
+   display: inline;
+   list-style-type: none;
+   text-align: left
+
+}
+
+footer ul
+{
+   margin: 0;
+   margin-top: 10px;
+   padding: 0;
+   font-weight: lighter;
+}
+
+@media only screen and (min-width: 600px) {
+   header h1 {
+     font-size: 70px;
+   }
+   .project .container
+   {
+      
+   }
+ }
+
+ @media only screen and (max-width: 500px) {
+   header
+   {
+      background-position-y: -30px;
+   }
+
+   header h1
+   {
+      padding-top: 300px;
+      margin-left: 20px;
+   }
+
+   .logo
+   {
+      padding-left: 20px;
+   }
+
+   .logo img
+   {
+      height: 40px;
+   }
+
+   nav
+   {
+      display: none;
+   }
+
+   .preset h1
+   {
+      padding-right: 15px;
+   }
+
+   .preset h2
+   {
+      padding-right: 15px;
+   }
+
+   .project .container
+   {
+      display: block;
+   }
+
+   .project .flex-grow-1
+   {
+      box-sizing: border-box;
+   }
+   
+ }
